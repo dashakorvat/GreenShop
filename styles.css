@@ -32,7 +32,7 @@ nav a {
 }
 nav a.active {
   border-bottom: 3px solid #46a358;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 }
 .login {
   display: inline-block;
@@ -46,6 +46,11 @@ nav a.active {
 }
 .hero {
   padding: 10px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .hero-container {
@@ -69,6 +74,7 @@ h1 {
   line-height: 1.1;
   color: #3d3d3d;
   margin-bottom: 15px;
+  width: 800px;
 }
 
 h1 span {
@@ -92,6 +98,7 @@ h1 span {
   font-size: 16px;
 }
 .banner-img {
+  display: inline-block;
   position: absolute;
   right: 40px;
   bottom: 0;
@@ -99,8 +106,17 @@ h1 span {
 
 .banner-img img {
   width: 450px;
+  display: inline-block;
 }
 .btn:hover,
 .login:hover {
   background-color: #5bbd72;
+}
+.login span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.login img {
+  display: inline-block;
+  vertical-align: middle;
 }
