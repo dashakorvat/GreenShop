@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: local(Cera Pro) url(../fonts/CeraPro-Regular.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font:
+    400 14px/1.2 "Cera Pro",
+    sans-serif;
+}
+.catalog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.catalog-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.sidebar {
+  width: 310px;
+  float: left;
+  background: #fbfbfb;
+  color: #3d3d3d;
+}
+.title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-left: 15px;
+}
+.categories li {
+  margin-bottom: 12px;
+  padding: 5px;
+  padding-left: 20px;
+}
+.banner img {
+  margin-top: 300px;
+  width: 310px;
+  height: 470px;
+}
+.filter span {
+  color: #46a358;
+}
+.categories span {
+  color: #46a358;
+}
+.bar {
+  width: 838px;
+  float: right;
+}
+.filter {
+  display: inline-block;
+}
+
+.filter li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.filter li a:hover {
+  color: #46a358;
+}
+.filter span {
+  border-bottom: 2px solid #46a358;
+}
+
+.sort {
+  float: right;
+  font-size: 15px;
+  color: #3d3d3d;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.select-wrapper select {
+  border: none;
+  outline: none;
+  padding: 7px 30px 7px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 58%;
+  transform: translateY(-50%);
+  width: 14px;
+  pointer-events: none;
+}
+
+.products {
+  width: 258px;
+  float: left;
+  margin: 25px 20px 0 20px;
+}
+
+.img {
+  margin-bottom: 15px;
+  background: #fbfbfb;
+  width: 100%;
+}
+.product-name {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.product-price {
+  color: #46a358;
+}
+
+.pagination {
+  float: right;
+  margin-top: 40px;
+  clear: both;
+}
+
+.pagination a {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-left: 5px;
+}
+
+.pagination .active {
+  background: #46a358;
+  color: white;
+  border-color: #46a358;
+}
