@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    local(Cera Pro),
+    url(fonts/CeraPro-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    local(Cera Pro),
+    url(fonts/CeraPro-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font: 400;
+}
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,7 +35,7 @@
 nav {
   display: inline-block;
   vertical-align: middle;
-  width: 945px;
+  width: 930px;
   text-align: center;
 }
 nav ul li {
@@ -24,7 +45,6 @@ nav ul li {
 nav a:hover {
   color: #46a358;
 }
-
 nav a {
   font-size: 16px;
   color: #3d3d3d;
@@ -58,14 +78,12 @@ nav a.active {
   box-sizing: border-box;
   overflow: hidden;
 }
-
 .label {
   font-size: 14px;
   letter-spacing: 2px;
   color: #3d3d3d;
   margin-bottom: 10px;
 }
-
 h1 {
   font-size: 70px;
   line-height: 1.1;
@@ -75,11 +93,9 @@ h1 {
 h1 > span {
   display: block;
 }
-
 h1 span span {
   color: #46a358;
 }
-
 .description {
   font-size: 14px;
   color: #727272;
@@ -103,7 +119,6 @@ div.wrapper:last-child {
   border-radius: 6px;
   font-size: 16px;
 }
-
 .btn:hover,
 .login:hover {
   background-color: #5bbd72;
@@ -115,4 +130,114 @@ div.wrapper:last-child {
 .login img {
   display: inline-block;
   vertical-align: middle;
+}
+.catalog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.catalog-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.sidebar {
+  width: 310px;
+  float: left;
+  background: #fbfbfb;
+  color: #3d3d3d;
+}
+.title {
+  font-size: 18px;
+  padding: 15px;
+}
+.categories li {
+  margin-bottom: 12px;
+  padding: 6px 0px 10px 30px;
+}
+.categories a.active {
+  color: #46a358;
+}
+.banner img {
+  margin-top: 300px;
+  width: 310px;
+  height: 470px;
+}
+
+.bar {
+  width: 838px;
+  float: right;
+}
+.filter {
+  display: inline-block;
+}
+.filter li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.filter li a:hover {
+  color: #46a358;
+}
+.filter li.active a {
+  color: #46a358;
+}
+.filter span {
+  border-bottom: 2px solid #46a358;
+}
+.sort {
+  float: right;
+  font-size: 15px;
+  color: #3d3d3d;
+  margin-top: -8px;
+}
+.select-wrapper {
+  display: inline-block;
+}
+.select-wrapper select {
+  border: none;
+  outline: none;
+  padding: 7px 30px 7px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.products {
+  width: 258px;
+  float: left;
+  margin: 25px 20px 0 45px;
+}
+.img {
+  margin-bottom: 15px;
+  background: #fbfbfb;
+}
+.product-name {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.product-price {
+  color: #46a358;
+}
+.pagination {
+  float: right;
+  margin-top: 40px;
+  clear: both;
+}
+.pagination a {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-left: 5px;
+}
+.pagination .active {
+  background: #46a358;
+  color: white;
+  border-color: #46a358;
+}
+.active {
+  font: 700;
+}
+.pagination a:hover {
+  color: #46a358;
 }
