@@ -16,8 +16,18 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Cera Pro";
+  src:
+    local(Cera Pro),
+    url(fonts/CeraPro-Bold.woff2) format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font: 400;
+  font-family: "Cera Pro";
 }
 .header-container {
   max-width: 1200px;
@@ -89,6 +99,7 @@ h1 {
   line-height: 1.1;
   color: #3d3d3d;
   margin-bottom: 15px;
+  font-weight: 900;
 }
 h1 > span {
   display: block;
@@ -180,8 +191,6 @@ div.wrapper:last-child {
 }
 .filter li.active a {
   color: #46a358;
-}
-.filter span {
   border-bottom: 2px solid #46a358;
 }
 .sort {
@@ -193,14 +202,9 @@ div.wrapper:last-child {
 .select-wrapper {
   display: inline-block;
 }
-.select-wrapper select {
-  border: none;
-  outline: none;
-  padding: 7px 30px 7px 10px;
-  font-size: 14px;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
+.content-wrapper {
+  float: right;
+  width: 890px;
 }
 .products {
   width: 258px;
@@ -217,6 +221,7 @@ div.wrapper:last-child {
 }
 .product-price {
   color: #46a358;
+  font-weight: 700;
 }
 .pagination {
   float: right;
@@ -236,7 +241,7 @@ div.wrapper:last-child {
   border-color: #46a358;
 }
 .active {
-  font: 700;
+  font-weight: 700;
 }
 .pagination a:hover {
   color: #46a358;
