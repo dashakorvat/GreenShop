@@ -193,9 +193,8 @@ h1 span span {
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 54px;
   margin-top: 20px;
-  justify-content: space-between;
 }
 .products img {
   margin-bottom: 15px;
@@ -253,7 +252,7 @@ h1 span span {
   justify-content: space-between;
   /* height: 250px; */
   background: #f5f5f5;
-  padding: 30px 30px 30px 0px;
+  padding: 30px 30px 8px 0px;
 }
 .placecard-content {
   text-align: right;
@@ -261,21 +260,24 @@ h1 span span {
 .placecard img {
   width: 287px;
   height: 292px;
-  margin-top: -52px;
+  margin-top: -80px;
 }
 .placecard-content h3 {
   font-size: 18px;
   font-weight: 900;
   margin-bottom: 10px;
   line-height: 1.4;
-}
-.placecard-content h3 span {
-  display: block;
+  max-width: 150px;
+  margin-left: auto;
+  text-align: right;
 }
 .placecard-content p {
   font-size: 14px;
   color: #777;
   margin-bottom: 25px;
+}
+.placecard-content .btn {
+  margin-bottom: 46px;
 }
 .blog {
   margin-top: 138px;
