@@ -196,9 +196,52 @@ h1 span span {
   gap: 54px;
   margin-top: 20px;
 }
+.product {
+  position: relative;
+  border-top: 2px solid transparent;
+  transition: 0.3s;
+}
+.product:hover {
+  border-top-color: #46a358;
+}
 .products img {
   margin-bottom: 15px;
   background: #fbfbfb;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  display: none;
+  gap: 10px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7px;
+}
+.overlay a {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay img {
+  margin: 0;
+  background: transparent;
+}
+.product:hover .overlay {
+  display: flex;
+}
+.sale {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background: #46a358;
+  color: white;
+  font-size: 14px;
+  padding: 6px 12px;
 }
 .product-name {
   margin-bottom: 5px;
