@@ -46,27 +46,81 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-nav {
+.menu {
   flex-grow: 1;
   text-align: center;
 }
-nav ul {
+.menu .menu_list {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
-nav a:hover {
-  color: #46a358;
+.menu_item {
+  position: relative;
 }
-nav a {
+.menu .menu_link {
   font-size: 16px;
   color: #3d3d3d;
   text-decoration: none;
 }
-nav a.active {
+.menu .menu_link:hover {
   border-bottom: 3px solid #46a358;
   padding-bottom: 20px;
   font-weight: 700;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: -53px;
+  padding-top: 31px;
+  min-width: 188px;
+  display: none;
+}
+.menu_item:hover > .submenu {
+  display: block;
+}
+.submenu li {
+  position: relative;
+}
+.submenu a {
+  display: block;
+  background-color: #edf6ee;
+  padding: 8px 0px 8px 14px;
+  text-align: left;
+  color: #3d3d3d;
+  font-weight: 400;
+}
+.submenu_level1::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: solid #3d3d3d;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+  opacity: 0;
+}
+.submenu_level1:hover::after {
+  opacity: 1;
+  border-color: white;
+}
+.submenu li:hover > a {
+  background: #1a712a;
+  color: white;
+  font-weight: 700;
+}
+.subsubmenu {
+  position: absolute;
+  top: -108px;
+  left: calc(100% + 1px);
+  min-width: 188px;
+  display: none;
+}
+.submenu_level1:hover > .subsubmenu {
+  display: block;
 }
 .login {
   display: flex;
